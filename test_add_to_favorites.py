@@ -17,14 +17,14 @@ def test_add_to_favorites():
         add_to_favorite_button = page.locator("div.style-header-add-favorite-M7nA2>button.desktop-usq1f1")
         add_to_favorite_button.click()
 
-        # Ожидание, пока кнопка станет в состоянии "Добавлено в избранное"
+        # Ожидание, пока кнопка перейдет в состояние "Добавлено в избранное"
         page.wait_for_selector("div[class=style-header-add-favorite-M7nA2]>button[data-is-favorite=true]")
 
-        # Переход в список избранное
+        # Переход в избранное
         go_to_favorites_button = page.locator("div.desktop-1rdftp2")
         go_to_favorites_button.click()
 
-        # Ожидание загрузки страницы избранных и проверка наличия добавленного товара
+        # Ожидание загрузки страницы избранного и проверка наличия добавленного товара
         page.wait_for_selector(".styles-module-root-hwVld")
         assert item_name in page.content(), "Товар не добавился в избранное"
         print("Объявление успешно добавлено в избранное")
