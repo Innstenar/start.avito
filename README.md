@@ -5,11 +5,14 @@
 
 ## Инструкция по запуску тестов
 1. Скачать и установить последнию версию Python c официального сайта https://www.python.org/downloads/
-2. Установить [Playwright](https://playwright.dev/) посредством ввода команды в терминале:
+2. Добавить путь к папке с установленным Python в список значений переменной Path
+3. Установить [Playwright](https://playwright.dev/) посредством ввода команды в терминале:
 ```
 pip install playwright
 ```
-3. Установить драйвер для Chromium:
+4. Установить драйвер для Chromium:
 ```
 playwright install chromium
 ```
+5. Скачать и установить [Git](https://git-scm.com/download)
+6. Добавить путь к папке с установленным Git в список значений переменной Path
