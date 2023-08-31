@@ -16,3 +16,10 @@ playwright install chromium
 ```
 5. Скачать и установить [Git](https://git-scm.com/download)
 6. Добавить путь к папке с установленным Git в список значений переменной Path
+7. Перейти в папку с тестом и запустить его используя терминал
+```
+cd start.avito/qa_tasks
+```
+```
+python test_add_to_favorites.py
+```
